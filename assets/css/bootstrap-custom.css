@@ -1,0 +1,6 @@
+
+body { background:#f8fafc; }
+.hero-blog { background:linear-gradient(135deg,#eff6ff,#fff); }
+.blog-card img { height:210px; object-fit:cover; }
+.article-cover { height:360px; object-fit:cover; }
+.article-content { font-size:1.08rem; line-height:1.85; }
