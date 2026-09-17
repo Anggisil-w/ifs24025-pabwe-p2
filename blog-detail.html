@@ -11,20 +11,35 @@
 <link rel="stylesheet" href="assets/css/bootstrap-custom.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top"><div class="container">
-<a class="navbar-brand fw-bold" href="index.html">Neura<span class="text-primary">Flow</span> AI</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Buka menu navigasi"><span class="navbar-toggler-icon"></span></button>
-<div id="nav" class="collapse navbar-collapse"><ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="index.html">Landing Page</a></li><li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li><li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
-</ul></div></div></nav>
+
+<!-- Navbar: logo brand dan navigasi ke halaman lain -->
+<nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Neura<span class="text-primary">Flow</span> AI</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+            aria-controls="nav" aria-expanded="false" aria-label="Buka menu navigasi">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Landing Page</a></li>
+        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <!-- Detail artikel: cover, meta, isi, dan komentar -->
 <main class="container py-5">
 <article class="mx-auto" style="max-width:900px">
+<!-- Header artikel: kategori, judul, meta penulis/tanggal, dan cover -->
+<header>
 <span class="badge text-bg-primary mb-3"><i class="bi bi-stars me-1" aria-hidden="true"></i> Generative AI</span>
 <h1 class="display-5 fw-bold">Memahami Generative AI: Dari Prompt hingga Konten</h1>
 <div class="text-secondary mb-4"><i class="bi bi-person me-1" aria-hidden="true"></i> Anggi Silalahi · <i class="bi bi-calendar ms-3 me-1" aria-hidden="true"></i> 17 September 2026 · <i class="bi bi-clock ms-3 me-1" aria-hidden="true"></i> 5 menit</div>
 <img class="img-fluid rounded-4 shadow article-cover w-100 mb-4" src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1400&q=80" alt="Ilustrasi Generative AI" width="1400" height="360" loading="eager" fetchpriority="high" decoding="async">
+</header>
 
 <!-- Isi artikel: minimal 3 paragraf tentang Generative AI -->
 <div class="article-content">
