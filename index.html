@@ -3,14 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NeuraFlow AI membantu bisnis memanfaatkan kecerdasan buatan melalui chatbot, otomasi proses, computer vision, dan analitik data.">
   <title>NeuraFlow AI — Solusi AI untuk Bisnis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <header class="site-header">
   <nav class="navbar container" aria-label="Navigasi utama">
     <a class="logo" href="index.html">Neura<span>Flow</span> AI</a>
-    <div class="nav-menu">
+    <button type="button" class="nav-toggle" id="navToggle" aria-controls="navMenu" aria-expanded="false" aria-label="Buka menu navigasi">
+      <span aria-hidden="true">☰</span>
+    </button>
+    <div class="nav-menu" id="navMenu">
       <a href="#layanan">Layanan</a><a href="#tentang">Tentang</a><a href="#kontak">Kontak</a>
       <a href="blog.html">Blog</a><a href="cv.html">CV</a>
     </div>
@@ -81,9 +88,12 @@
       <p>Hubungi NeuraFlow AI untuk membahas kebutuhan otomasi, chatbot, computer vision, atau analitik data.</p>
     </div>
     <form class="form">
-      <input type="text" placeholder="Nama lengkap" aria-label="Nama lengkap">
-      <input type="email" placeholder="Email" aria-label="Email">
-      <textarea placeholder="Ceritakan kebutuhan AI Anda" aria-label="Pesan"></textarea>
+      <label class="sr-only" for="nama">Nama lengkap</label>
+      <input id="nama" name="nama" type="text" placeholder="Nama lengkap" autocomplete="name" required>
+      <label class="sr-only" for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="Email" autocomplete="email" required>
+      <label class="sr-only" for="pesan">Pesan</label>
+      <textarea id="pesan" name="pesan" placeholder="Ceritakan kebutuhan AI Anda" required></textarea>
       <button class="btn btn-primary" type="submit">Kirim Konsultasi</button>
     </form>
   </div>
@@ -91,5 +101,13 @@
 </main>
 
 <footer class="site-footer"><div class="container">© 2026 <span>NeuraFlow AI</span> · Smart solutions with AI.</div></footer>
+<script>
+  var navToggle = document.getElementById('navToggle');
+  var navMenu = document.getElementById('navMenu');
+  navToggle.addEventListener('click', function () {
+    var open = navMenu.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+</script>
 </body>
 </html>
